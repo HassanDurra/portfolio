@@ -1,0 +1,903 @@
+
+/* Pt fonts */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    transition: 1s all;
+
+    background-color: rgba(0, 128, 0, 0.376);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(12, 43, 6);
+    border:2px solid green;
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(19, 113, 22);
+    transition: 0.5s all linear;
+    box-shadow: 0 0 20px green;
+  }
+/* header section */
+
+.headersection{
+    height:105vh;
+
+    background:url(../images/background.png) center;
+}
+
+.Navbarsection{
+    padding: 20px;
+
+    display: grid;
+    position: relative;
+    top: 30px;
+    grid-template-columns: auto auto;
+    column-gap: 400px;
+    row-gap: 20px;
+}
+input::placeholder{
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+}
+.nav-brand a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+font-size: 45px;
+text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.336);
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+.nav-links ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin: 20px;
+}
+.nav-links a{
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: yellowgreen;
+    text-shadow: 2px 2px 30px greenyellow;
+    transition: 0.5s all linear;
+}
+.searchbtn{
+    padding: 12px 17px;
+    position: relative;
+    bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+
+}
+
+.searchbtn:hover{
+    transition: 0.8s linear all;
+    background-color: rgb(10, 43, 10);
+    box-shadow: 0  0 20px green;
+}
+
+/* search section */
+.searcharea{
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.603);
+    width: auto;
+    -webkit-transition: 1s;
+    transition: 1s linear all;
+    min-width: 100%;
+    animation: fadeIn 0.7s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    display: none;
+    
+}
+
+.input{
+    margin: auto!important;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.input form{
+    display: flex;
+    width: auto;
+    animation: Form 2s;
+    padding: 30px;
+}
+@keyframes Form{
+    from{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.input form input{
+    min-width: 500px;
+    width: auto;
+}
+.input form .searchbtn{
+    position: relative;
+    top: 0px;
+}
+.btnclos{
+ font-size: 30px;
+ margin: 20px;
+ padding: 10px 20px;
+ background: rgba(0, 0, 0, 0.541);
+ width: max-content;
+ cursor: pointer;
+ animation: Btnclose 1s;
+ border: 2px solid white;
+ color: white;
+}
+@keyframes Btnclose{
+    from{
+        opacity:0;
+        transform: translate(50%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.btnclos:hover{
+    background-color: rgb(30, 99, 30);
+    box-shadow:  0 0 20px green;
+    transition: 0.5s linear all;
+}
+
+/* banner section */
+
+.bannersection{
+    padding: 20px;
+    display: grid;
+    position: relative;
+    top: 50px;
+    grid-template-columns:auto auto;
+    column-gap: 220px;
+}
+.bannertext{
+    padding: 10px;
+    position: relative;
+    bottom: 30px;
+}
+.bannertext h1{
+ font-size: 80px;
+animation:example 1.8s;
+ font-family: arial black;
+ font-weight: bolder;
+ color: white;
+
+}
+@keyframes example {
+    from {
+        transform: translate(20%);
+        text-shadow: 2px 2px white;
+        opacity: 0;}
+    to {opacity: 1;}
+  }
+.bannertext h3{
+    font-size: 50px;
+    color: white;
+    animation: h3 2s;
+    padding: 10px;
+}
+@keyframes h3{
+from{
+    opacity: 0;
+    transform: translateY(-30%);
+}
+to{
+    opacity: 1;
+}
+}
+/* buttons section */
+.btn1{
+    margin-top: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 40px;
+    font-size: 18px;
+    margin-left: 10px;
+    animation: Btn1 1.3s;
+    cursor: pointer;
+}
+@keyframes Btn1{
+    from{
+        opacity: 0;
+        transform: translate(20%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.btn2{
+    margin-top: 20px;
+    background-color: rgb(6, 20, 6);
+    color: white;
+    animation: Btn2 1.3s;
+    border: 2px solid white;
+    padding: 8px 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+@keyframes Btn2{
+    from{
+        opacity: 0;
+        transform: translate(-20%);
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* button section ends */
+.bannertext p{
+    color: white;
+    animation:  P 2s;
+    padding: 10px;
+}
+
+
+
+.btn2:hover{
+    background-color: transparent;
+    box-shadow: 0 0 20px green;
+    transition: 0.5s all linear;
+}
+.btn1:hover{  
+    background-color: rgb(6, 20, 6);
+    box-shadow: 0 0 20px green;
+    transition: 0.5s all linear;
+}
+/* btn section ends */
+.bannerimg{
+    padding: 10px;
+}
+.bannerimg img{
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    animation: Image 1.5s;
+    right: 30px;
+}
+@keyframes Image{
+    from{
+        opacity: 0;
+        transform: scale(50%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* fade */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+
+}
+/* About section */
+.About{
+animation: About 1s;
+display: none;
+position: fixed;
+height:100vh;
+z-index: 1;
+width: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+cursor: pointer;
+background:rgba(7, 58, 24, 0.932);
+}
+
+.aboutdata{
+    padding: 40px;
+    position: relative;
+    bottom: 30px;
+    display:grid;
+    grid-template-columns:400px 900px;
+    column-gap:100px;
+
+}
+
+.imgarea{
+animation: Picture 1s;
+position: relative;
+top: 30px;
+border: 2px solid rgba(8, 68, 23, 0.945);
+height: max-content;
+}
+.imgarea img{
+    height: 100%;
+    position: relative;
+    top: 2px;
+    box-shadow: 0 0 20px yellowgreen;
+    padding: 5px;
+}
+
+@keyframes Picture{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* textsection from about  */
+.textarea h1{
+    color: white;
+    font-size: 80px;
+    padding: 10px;
+    animation: H1 1.5s;
+}
+@keyframes H1{
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+/* textarea section 2 */
+
+.textarea h4{
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    animation:H4 2s;
+}
+
+@keyframes H4{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+}
+
+
+/* textarea p section */
+.textarea p{
+    color: rgba(255, 255, 255, 0.733);
+    padding: 10px;
+    max-width: 800px;
+    width: auto;
+    animation:P 2.5s;
+}
+
+@keyframes P{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/*  */
+.skill1{
+    padding-top: 40px;
+}
+.skills{
+    padding-left: 20px;
+    list-style: bullet;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.skills li{
+    padding: 5px;
+}
+.skills h6{
+    color: yellowgreen;
+    font-size: 18px;
+    animation: Skill 1.8s;
+}
+@keyframes Skill{
+    from{
+        opacity: 0;
+        transform: rotate(20deg );
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* about animation */
+@keyframes About{
+    from{opacity: 0;
+        transform:perspective(50%);
+        box-shadow: 0 0 20px yellowgreen;
+    }
+    to{
+        box-shadow: 0 0 20px green;
+        opacity: 1;
+    }
+}
+/* text section for cards */
+.text h5{
+    padding: 10px;
+    width: 225px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.39);
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    font-family: Arial;
+    box-shadow: 0 0 10px rgb(8, 204, 8);
+}
+
+/* Project sections */
+.Projectssection{
+    position: fixed;
+   
+    width: 100%;
+    display: none;
+    animation: About 1s;
+    background:rgba(7, 58, 24, 0.932);
+    z-index: 1;
+        overflow-Y: scroll;
+    height:100vh;
+}
+
+/* project data section */
+.projectdata{
+
+    padding: 20px;    
+}
+.projectdata h1{
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+    bottom: 70px;
+    animation: H1 1s;
+    text-transform: uppercase;
+    color: white;
+}
+/* card section  */
+.cardsection{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 80px;
+    overflow-x: hidden;
+    row-gap:30px;
+    position: relative;
+    bottom: 40px;
+
+
+    
+}
+
+.card{
+    border: 2px solid green;
+    overflow: hidden!important;
+    height: 300px;
+   
+    animation:cards 1.3s;
+}
+
+@keyframes cards{
+    from{
+        opacity: 0;
+        transform: scaley(0.6);
+    }
+    to{
+        opacity: 1;
+        box-shadow: 0 0 20px green;
+    }
+}
+/* button section for cards*/
+
+/* end of section */
+/* image for cards */
+
+.image img{
+    padding: 10px;
+    animation: Picture 2s;
+    width: 100%;
+    height: 250px;
+}
+
+.hiddendiv{
+    position: relative;
+    height: 295px;
+    width: 245px;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+    animation: Hover 1s;
+    background-color: rgba(0, 0, 0, 0.708);
+
+}
+.hiddendiv h1{
+    position: relative;
+    top: 60px;
+    animation: H1 0.8s;
+    font-size: 30px;
+}
+
+.hiddendiv p{
+
+    color: white;
+    position: relative;
+    top: 80px;
+    animation: P 0.9s;
+    padding: 10px;
+    text-align: center;
+}
+
+.hiddendiv a{
+    color: white;
+    position: relative;
+    top: 110px;
+    border: 2px solid green;
+    left: 30px;
+    animation: Cardtext 1s ;
+    border-radius: 3px;
+    padding: 10px 40px;
+    background-color: green;
+    width: fit-content;
+    cursor: pointer;
+}
+.hiddendiv a:hover{
+    background-color: transparent;
+    transition: 0.6s linear all;
+}
+@keyframes Hover {
+    from{
+        opacity: 0;
+        transform:scale(1.3) ;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+/* Resume Section */
+.Resume_Section{
+    height: 100vh;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    display: none;
+    background:rgba(7, 58, 24, 0.932);
+    animation: About 1s;
+    width: 100%;
+}
+
+/* resume data */
+.resumedata{
+ 
+    padding: 30px;
+
+}
+.resumedata >h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
+    animation: H1 1s;
+}
+
+.namesection h1{
+    font-size: 50px;
+    height: 85px;
+    animation: H1 1s;
+    padding-left: 10px;
+    border-left:8px solid black;
+    position: relative;
+    bottom: 30px;
+    color: rgb(12, 185, 12);
+}
+.namesection h4{
+    color: white;
+    animation: h4 1s;
+    position: relative;
+    left: 20px;
+    font-size: 18px;
+    bottom: 50px;
+}
+.line{
+   height: 8px;
+   background-color: aliceblue;
+   border-bottom:8px solid white ;
+   width: 400px;
+   left: 20px;
+   position: relative;
+   bottom: 30px;
+
+    
+}
+.resumecols{
+    display: grid;
+    grid-template-columns:800px 400px;
+
+}
+.namesection p{
+    color: white;
+    animation: p 1s;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.educ h1{
+    position: relative;
+    margin-top: 40px;
+}
+.skill{
+    border-left: 6px solid black;
+    padding-left:30px;
+    padding-top: 30px;
+}
+
+/* education center */
+
+.educationsection{
+    border-left: 6px solid black;
+    padding-left:30px;
+}
+
+.educationsection h4{
+    position: relative;
+    top: 0;
+    animation: h4 1s;
+    left: 0;
+    white-space: nowrap;
+    font-size: 25px;
+}
+.educationsection strong{
+    color: yellowgreen;
+}
+.educationsection h5{
+color: green;
+padding-top: 10px;
+animation: H5 1s;
+font-size: 20px;
+
+}
+
+.educationsection .l2{
+    padding-top: 20px;
+}
+
+.educationsection ul{
+    list-style-type: none;
+}
+
+/* animations for education section */
+
+@keyframes H5{
+    from{
+        opacity: 0;
+        transform: translate(50%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* h4 animations */
+@keyframes h4{
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+/* p tag animations  */
+@keyframes p{
+    from{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* contact section */
+
+
+/* projectoverview */
+
+.contactsection ul{
+    padding-left: 20px;
+    border-left: 6px solid black;
+    list-style-type: none;
+}
+.contactsection  li{
+    padding: 10px;
+}
+.contactsection a{
+    color: white;
+    animation: p 1s;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contactsection .i{
+    color: yellowgreen!important;
+}
+
+/* project section */
+
+.projectoverview {
+position: relative;
+top:30px
+}
+
+.projectlinks ul{
+    padding-left: 20px;
+    list-style: none;
+    border-left: 6px solid black;
+}
+.projectlinks li{
+    padding: 10px;
+}
+.projectlinks a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.projectlinks .i{
+    color: greenyellow;
+}
+
+/* end of resume section */
+
+.lines{
+    height: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+.new
+{
+    padding: 30px;
+}
+
+
+/* contact section start from here */
+.Contact_section{
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    display: none;
+    background:rgba(7, 58, 24, 0.932);
+    animation: About 1s;
+}
+.Contact_section >h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    animation: H1 1s;
+}
+
+.formdata{
+        display: flex;
+        position: relative;
+        bottom: 45px;
+        justify-content: center
+}
+.formdata input{
+    width:400px;
+    animation:label 1s;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(22, 170, 22, 0.548);
+    border: 2px solid rgb(55, 205, 50);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.textarea1{
+    animation:label 1s;
+    width:400px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(22, 170, 22, 0.548);
+    border: 2px solid rgb(55, 205, 50);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: yellowgreen;
+}
+textarea::placeholder{
+    font-size: 18px;
+    font-weight: 200;
+    color: yellowgreen;
+}
+
+.formdata form>button{
+    color: white;
+    width: 100%;
+    animation:label 1s;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(153, 205, 50, 0.164);
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.formdata form>button:hover{
+background-color:rgb(8, 87, 8);
+color: white;
+animation:label 1s;
+box-shadow: 0 0 20px yellowgreen;
+transition: 0.7s linear all;
+}
+
+.formdata form>label{
+    animation:label 1s;
+    color: white;
+}
+
+/* contact section animations */
+
+@keyframes label{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* end of contact section  */
