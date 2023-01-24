@@ -137,3 +137,14 @@ document.getElementById('Contact').style.display="block";
 function hideContact(){
     document.getElementById('Contact').style.display="none";
 }
+
+
+// navbar show and hide
+// show navbar
+function ShowNavbar(){
+    document.getElementById('nav').style.display="block";
+}
+// hide navbar
+function hideNavbar(){
+    document.getElementById('nav').style.display="none";
+}
