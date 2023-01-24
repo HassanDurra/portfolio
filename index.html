@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -16,6 +16,21 @@
 <!-- end of links -->
 </head>
 <body>
+
+    <!-- mobile navbar -->
+    <section class="mobilenav" id="nav">
+ <button class="btnclos" onclick="hideNavbar()"><i class="fa fa-close" aria-hidden="true"></i></button>
+<!-- navbar section -->
+        <div class="navbar-mobile">
+            <ul>
+               <li><a onclick="Page()"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About Me</a></li>
+        <li><a onclick="Projects()"><i class="fa fa-database" aria-hidden="true"></i>&nbsp; All Projects</a></li>
+        <li><a onclick="showresume()"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp; My Resume</a></li>
+        <li><a  onclick="showContact()"><i class="fa fa-mail-forward" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
 <!-- contact section start  -->
 <section class="Contact_section" id="Contact"> 
     <button class="btnclos" onclick="hideContact()"><i class="fa fa-close" aria-hidden="true"></i></button>
@@ -87,11 +102,8 @@
                     <li>
                         <a href="https://www.linkedin.com/in/hassan-durra-68b123220/"><i class=" i fa-brands fa-linkedin"></i>&nbsp;Hassan Durra .</a>
                     </li>
-             
                     <!-- github ends -->
-                    <li>
-                        <a href="https://github.com/HassanDurra/"><i class="i fa-brands fa-github" aria-hidden="true"></i>&nbsp;HassanDurra.</a>
-                    </li>
+                    
                 </ul>
 
                 
@@ -109,7 +121,7 @@
                     <ul>
                         <li>
                             
-                            <h4>Aptech Education Garden Center <strong>( HDSE ) .</strong></h4> <h5>2021-2023</h5>
+                            <h4 class="l1">Aptech Education Garden Center <strong>( HDSE ) .</strong></h4> <h5>2021-2023</h5>
                         </li>
 
 <!-- /////////////////////////////////////////////////////////// -->
@@ -222,7 +234,7 @@
            </div>
            <!-- image mouse over div -->
             <div class="image">
-                <img src="images/shopnow.png" alt="">
+                <img src="./images/shopnow.png" alt="">
             </div>
             <div class="text"><h5>Shop Now</h5></div>
 
@@ -237,7 +249,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/playstation.png" alt="">
+                 <img src="./images/playstation.png" alt="">
              </div>
              <div class="text"><h5>Ps4DigitalGames</h5></div>
            
@@ -252,7 +264,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
             
             <div class="text"><h5>Shop Now</h5></div>
@@ -267,7 +279,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
              <div class="text"><h5>Shop Now</h5></div>
             
@@ -282,7 +294,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
              <div class="text"><h5>Shop Now</h5></div>
            
@@ -297,7 +309,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
              <div class="text"><h5>Shop Now</h5></div>
            
@@ -312,7 +324,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
              <div class="text"><h5>Shop Now</h5></div>
            
@@ -327,7 +339,7 @@
             </div>
             <!-- image mouse over div -->
              <div class="image">
-                 <img src="images/shopnow.png" alt="">
+                 <img src="./images/shopnow.png" alt="">
              </div>
              <div class="text"><h5>Schools</h5></div>
            
@@ -347,7 +359,7 @@
         <button class="btnclos" onclick="HideAbout()"><i class="fa fa-close" aria-hidden="true"></i></button>
         <div class="aboutdata">
             <div class="imgarea">
-                <img src="images/profile.JPG" width="100%" alt="">
+                <img src="./images/profile.JPG" width="100%" alt="">
             </div>
         <div class="textarea">
             <h1>Hassan Durra Murad</h1>
@@ -398,7 +410,7 @@
         <div class="input">
             <form action="" >
                 <input type="text" placeholder="Search Projects...">
-                <button class="searchbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="searchbtn1"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
     
         </div>
@@ -412,12 +424,12 @@
 <div class="nav-links">
     <ul>
 
-        <li><a onclick="Page()"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About Me</a></li>
-        <li><a onclick="Projects()"><i class="fa fa-database" aria-hidden="true"></i>&nbsp; All Projects</a></li>
-        <li><a onclick="showresume()"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp; My Resume</a></li>
-        <li><a  onclick="showContact()"><i class="fa fa-mail-forward" aria-hidden="true"></i> Contact</a></li>
-        <li><button class="searchbtn" onclick="Showsearch()"><i class="fa fa-search" aria-hidden="true"></i></button></li>
-    
+        <li><a onclick="Page()" class="hidenavbar"><i class="fa fa-user" aria-hidden="true"></i>&nbsp; About Me</a></li>
+        <li><a onclick="Projects()" class="hidenavbar"><i class="fa fa-database" aria-hidden="true"></i>&nbsp; All Projects</a></li>
+        <li><a onclick="showresume()" class="hidenavbar"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp; My Resume</a></li>
+        <li><a  onclick="showContact()" class="hidenavbar"><i class="fa fa-mail-forward" aria-hidden="true"></i> Contact</a></li>
+        <li><button class=" searchbtn" onclick="Showsearch()"><i class="fa fa-search" aria-hidden="true"></i></button></li>
+        <li><button class="toggle searchbtn" onclick="ShowNavbar()"><i class="fa-solid fa-sliders"></i></button></li>
     </ul>
 </div>
 </nav>
@@ -440,7 +452,7 @@
 
 <div class="bannerimg">
 
-<img src="images/banner.png" alt="">
+<img src="./images/banner.png" alt="">
 </div>
 </div>
 <!-- text section ends -->
@@ -448,7 +460,7 @@
 
 
 <!-- javascript -->
-<script src="js/function.js"></script>
+<script src="./js/function.js"></script>
 
 </body>
 </html>
