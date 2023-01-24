@@ -33,6 +33,7 @@ body{
 
 .headersection{
     height:105vh;
+     overflow: hidden;
 
     background:url(../images/background.png) center;
 }
