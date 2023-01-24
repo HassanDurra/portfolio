@@ -99,7 +99,22 @@ font-weight: bold;
     background-color: rgb(10, 43, 10);
     box-shadow: 0  0 20px green;
 }
+.searchbtn1{
+    padding: 12px 17px;
+    position: relative;
+    bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
 
+}
+
+.searchbtn1:hover{
+    transition: 0.8s linear all;
+    background-color: rgb(10, 43, 10);
+    box-shadow: 0  0 20px green;
+}
 /* search section */
 .searcharea{
     height: 100vh;
@@ -143,7 +158,7 @@ font-weight: bold;
     min-width: 500px;
     width: auto;
 }
-.input form .searchbtn{
+.input form .searchbtn1{
     position: relative;
     top: 0px;
 }
@@ -901,3 +916,231 @@ transition: 0.7s linear all;
     }
 }
 /* end of contact section  */
+
+/* mobile navbar */
+
+.mobilenav{
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.833);
+    position: fixed;
+    display: none;
+    animation: About 1;
+    z-index: 1;
+
+}
+
+/* .navbar */
+.navbar-mobile{
+top:18%;
+
+    position: relative;
+}
+.navbar-mobile ul{
+    margin: auto;
+
+    list-style: none;
+}
+.navbar-mobile ul li{
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+.navbar-mobile ul li>a{
+    color: white;
+    font-size: 40px;
+    animation: p 2s;
+}
+/* media query seection */
+@media (min-width:980px) {
+    .toggle
+    {
+        display: none;
+    }
+}
+/* for mobile responsivenes */
+@media (max-width:980px) {
+    .toggle
+    {   position: absolute;
+        right: 50px!important;
+        display: block;
+    }
+
+    .hidenavbar{
+        display: none;
+    }
+    .searchbtn{
+        position: relative;
+        right: 15px;
+    }
+    .searchbtn1{
+        position: relative;
+       left: 3px;
+    }
+    .nav-brand{
+        position: relative;
+        right: 10px;
+        font-size: 15px;
+        padding: 0%;
+    }
+    .Navbarsection{
+       
+        display: grid;
+        position: relative;
+        top: 30px;
+        grid-template-columns: 50px auto;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .bannersection{
+        width: fit-content;
+
+        height: 900px;
+    }
+    body{
+        overflow-y:hidden ;
+    }
+   .bannerimg{
+    display: none;
+    height:900px;
+   }
+   .headersection{
+    height:max-content!important;
+
+    overflow-x: hidden;
+   }
+   .bannertext h1{
+    font-size: 60px;
+   }
+   .bannertext h3{
+    white-space: nowrap;
+    font-size: 25px;
+   }
+   .bannertext p{
+    font-size: 15px;
+   }
+   .btn2{
+    white-space: nowrap;
+    position: relative;
+    left: 14px;
+    padding: 8px 35px;
+   }
+   .btn1{
+    position: relative;
+    left: 5px;
+    
+   }
+   .input form input{
+    min-width: 300px;
+    width: auto;
+}
+
+/* about section */
+
+.aboutdata{
+    padding: 40px;
+    position: relative;
+    bottom: 30px;
+    display:grid;
+    grid-template-columns:auto;
+    column-gap:10px;
+
+}
+.About{
+    animation: About 1s;
+    display: none;
+    position: fixed;
+    height:100vh;
+    z-index: 1;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+    background:rgba(7, 58, 24, 0.932);
+    }
+    .aboutdata h1{
+        font-size: 55px;
+        margin-top: 30px;
+       position: relative;
+       right: 20px;
+    }
+    .aboutdata h4{
+        white-space: nowrap;
+        font-size: 30px;
+        position: relative;
+        right: 20px;
+    }
+    .imgarea img{
+        position: relative;
+        bottom: 20px;
+        right: 30px;
+    }
+    .aboutdata p{
+        position: relative;
+        right: 20px;
+    }
+    .aboutdata .skills{
+        position: relative;
+        right: 20px;
+    }
+
+    /* project sectiojn */
+    .cardsection{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 250px;
+        column-gap: 80px;
+        overflow-x: hidden;
+        left: 30px;
+        row-gap:30px;
+        position: relative;
+        bottom: 40px;
+    
+    
+        
+    }
+.Projectssection{
+    overflow-x: hidden!important
+}
+.resumecols{
+    display: grid;
+    grid-template-columns:auto;
+
+}
+.namesection .l1{
+    font-size: 17px;
+ }
+.namesection .li2{
+   font-size:18px;
+}
+.namesection h1{
+   white-space: pre-wrap;
+   font-size: 30px;
+   position: relative;
+ 
+   bottom: 5px;
+}
+.namesection p{
+    width: 270px;
+}
+.skill{
+display: grid;
+grid-template-columns: auto!important;
+
+}
+.contactdata input {
+  width: 300px;
+  position: relative;
+
+}
+.contactdata label{
+    position: relative;
+  
+}
+.textarea1{
+    width: 300px;
+}
+.Contact_section h1{
+    margin-top: 30px;
+}
+}
