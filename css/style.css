@@ -13,6 +13,11 @@
 body{
     overflow: hidden;
 }
+.textarea{
+position: relative;
+bottom: 30px;
+
+}
 ::-webkit-scrollbar {
     width: 10px;
     transition: 1s all;
